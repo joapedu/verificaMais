@@ -1,4 +1,4 @@
-# 🔎 Como o VerificaMais Funciona — Documentação Técnica e Pedagógica
+# 🔎 Como o Verifica+ Funciona — Documentação Técnica e Pedagógica
 
 > Este documento explica o funcionamento detalhado de cada jogo, a lógica de pontuação, o fluxo de navegação e as decisões de design para o público idoso.
 

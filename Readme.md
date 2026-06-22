@@ -1,4 +1,4 @@
-# 🛡️ VerificaMais
+# 🛡️ Verifica+
 
 > **Sistema educativo gamificado de conscientização sobre golpes digitais e fake news, desenvolvido especialmente para a terceira idade.**
 
