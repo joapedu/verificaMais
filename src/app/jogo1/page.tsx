@@ -4,7 +4,6 @@ import { useState, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { NavBar } from '@/components/NavBar'
 import { ScoreBar } from '@/components/ScoreBar'
-import { ChatBubble } from '@/components/ChatBubble'
 import { FeedbackOverlay } from '@/components/FeedbackOverlay'
 import { GameOverScreen } from '@/components/GameOverScreen'
 import { AccessibilityFAB } from '@/components/AccessibilityFAB'
@@ -145,8 +144,8 @@ export default function Jogo1Page() {
                   aria-label={`Conversa ${si + 1}: ${scenario.contactName}`}
                   onKeyDown={(e) => e.key === 'Enter' && !selected && handleSelect(side)}
                 >
-                  {/* Thumbnail */}
-                  <div className="w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                  {/* Conversa — imagem completa */}
+                  <div className="w-full aspect-[17/12] bg-gray-100 overflow-hidden">
                     <img
                       src={`/images/${scenario.imageId}.svg`}
                       alt=""
@@ -154,15 +153,6 @@ export default function Jogo1Page() {
                       aria-hidden="true"
                     />
                   </div>
-
-                  {/* Chat */}
-                  <ChatBubble
-                    contactName={scenario.contactName}
-                    contactEmoji={scenario.contactEmoji}
-                    messages={scenario.messages}
-                    showRedFlags={revealRedFlags}
-                    className="rounded-t-none"
-                  />
                 </div>
 
                 {/* Button / result */}

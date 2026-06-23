@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <!-- Background -->
-  <rect width="800" height="600" fill="#FEF3C7"/>
+<svg width="680" height="480" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B0000"/><stop offset="100%" stop-color="#880E4F"/>
+    </linearGradient>
+    <clipPath id="fr"><rect width="680" height="480"/></clipPath>
+  </defs>
+  <g clip-path="url(#fr)">
+    <!-- ── TOP ILLUSTRATION ZONE (y 0–200) ── -->
+    <rect width="680" height="200" fill="url(#bg)"/>
+    <rect width="680" height="200" fill="rgba(0,0,0,0.18)"/>
+    <!-- Big icon centred vertically in top zone -->
+    <text x="340" y="138" text-anchor="middle" font-family="Arial,sans-serif"
+          font-size="104" fill="rgba(255,255,255,0.88)">&#9888;</text>
 
-  <!-- Top strip -->
-  <rect width="800" height="8" fill="#D97706"/>
+    <!-- ── BOTTOM TEXT ZONE (y 200–480, white) ── -->
+    <rect y="200" width="680" height="280" fill="white"/>
 
-  <!-- Card shadow area -->
-  <rect x="60" y="60" width="680" height="480" rx="24" fill="white" fill-opacity="0.65"/>
+    <!-- Source band -->
+    <rect y="200" width="680" height="34" fill="#880E4F"/>
+    <text x="16" y="223" font-family="Arial,sans-serif" font-size="16"
+          font-weight="bold" fill="white">PrevidenciaAlerta.wordpress.com</text>
+    <text x="664" y="223" text-anchor="end" font-family="Arial,sans-serif"
+          font-size="13" fill="rgba(255,255,255,0.82)">17/06/2025</text>
 
-  <!-- Big icon watermark -->
-  <text x="400" y="310" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="200" font-weight="bold"
-    fill="#FCD34D" opacity="0.5">✗</text>
+    <!-- Badge -->
+    <rect x="16" y="248" width="76" height="24" rx="12" fill="#FF1744"/>
+    <text x="26" y="264" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="white">URGENTE</text>
 
-  <!-- Category label -->
-  <text x="400" y="340" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="52" font-weight="900"
-    fill="#78350F">FAKE NEWS</text>
+    <!-- Headline (large, dark) -->
+    <text x="16" y="295" font-family="Arial,sans-serif"
+             font-size="30" font-weight="900" fill="#111">Nova lei CANCELA</text>
+    <text x="16" y="329" font-family="Arial,sans-serif"
+             font-size="30" font-weight="900" fill="#111">aposentadoria de quem tem</text>
+    <text x="16" y="363" font-family="Arial,sans-serif"
+             font-size="30" font-weight="900" fill="#111">imovel</text>
 
-  <!-- Sub label -->
-  <text x="400" y="400" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="26" font-weight="600"
-    fill="#78350F" opacity="0.75">Notícia Falsa · Imagem 29</text>
+    <!-- Excerpt (smaller, grey) -->
+    <text x="16" y="407" font-family="Arial,sans-serif"
+             font-size="17" fill="#444">Reforma aprovada em sigilo. Aposentados com casa perdem</text>
+    <text x="16" y="429" font-family="Arial,sans-serif"
+             font-size="17" fill="#444">beneficio.</text>
 
-  <!-- Placeholder notice -->
-  <text x="400" y="490" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="18" fill="#94A3B8">
-    Substitua por imagem real (800 × 600 px)
-  </text>
-
-  <!-- Bottom strip -->
-  <rect y="592" width="800" height="8" fill="#D97706"/>
+    <!-- Accent bands -->
+    <rect width="680" height="9" fill="#DC2626"/>
+    <rect y="471" width="680" height="9" fill="#DC2626"/>
+  </g>
 </svg>

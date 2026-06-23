@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Eye, Lock, Search } from 'lucide-react'
+import { Eye, Lock } from 'lucide-react'
 import { NavBar } from '@/components/NavBar'
 import { ScoreBar } from '@/components/ScoreBar'
 import { FeedbackOverlay } from '@/components/FeedbackOverlay'
@@ -142,8 +142,8 @@ export default function Jogo3Page() {
 
         {/* Main card */}
         <div className="game-card overflow-hidden">
-          {/* Image */}
-          <div className="w-full aspect-square bg-gray-100 overflow-hidden">
+          {/* Image — enquadrada sem corte lateral */}
+          <div className="w-full aspect-[17/12] bg-gray-100 overflow-hidden">
             <img
               src={`/images/${round.imageId}.svg`}
               alt=""
@@ -153,17 +153,6 @@ export default function Jogo3Page() {
           </div>
 
           <div className="p-5 flex flex-col gap-3">
-            {/* Category chip */}
-            <span className="inline-flex self-start items-center gap-1 bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
-              <Search size={12} aria-hidden="true" />
-              {round.category}
-            </span>
-
-            {/* Title */}
-            <h2 className="font-black text-gray-900 text-game-xl leading-snug">
-              {round.title}
-            </h2>
-
             {/* Clues revealed */}
             <div className="flex flex-col gap-2 mt-1" aria-live="polite" aria-label="Pistas reveladas">
               {Array.from({ length: 3 }, (_, i) => {

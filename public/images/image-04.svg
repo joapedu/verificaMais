@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <!-- Background -->
-  <rect width="800" height="600" fill="#FEE2E2"/>
-
-  <!-- Top strip -->
-  <rect width="800" height="8" fill="#DC2626"/>
-
-  <!-- Card shadow area -->
-  <rect x="60" y="60" width="680" height="480" rx="24" fill="white" fill-opacity="0.65"/>
-
-  <!-- Big icon watermark -->
-  <text x="400" y="310" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="200" font-weight="bold"
-    fill="#FCA5A5" opacity="0.5">⚠</text>
-
-  <!-- Category label -->
-  <text x="400" y="340" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="52" font-weight="900"
-    fill="#991B1B">GOLPE</text>
-
-  <!-- Sub label -->
-  <text x="400" y="400" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="26" font-weight="600"
-    fill="#991B1B" opacity="0.75">Tentativa de Golpe · Imagem 04</text>
-
-  <!-- Placeholder notice -->
-  <text x="400" y="490" text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="18" fill="#94A3B8">
-    Substitua por imagem real (800 × 600 px)
-  </text>
-
-  <!-- Bottom strip -->
-  <rect y="592" width="800" height="8" fill="#DC2626"/>
+<svg width="680" height="480" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="bs" x="-4%" y="-4%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.12)"/>
+    </filter>
+    <clipPath id="fr"><rect width="680" height="480" rx="10"/></clipPath>
+  </defs>
+  <g clip-path="url(#fr)">
+    <!-- WhatsApp wallpaper background -->
+    <rect width="680" height="480" fill="#dfe7ed"/>
+    <!-- Status bar -->
+    <rect width="680" height="26" fill="#1B5E20"/>
+    <text x="14" y="18" font-family="Arial,sans-serif" font-size="12" fill="white" font-weight="bold">9:41</text>
+    <text x="666" y="18" font-family="Arial,sans-serif" font-size="11" fill="white" text-anchor="end">&#9646;&#9646; &#9646;</text>
+    <!-- Header bar -->
+    <rect y="26" width="680" height="62" fill="#1B5E20"/>
+    <!-- Back arrow -->
+    <text x="14" y="66" font-family="Arial,sans-serif" font-size="28" fill="white" font-weight="bold">&#8249;</text>
+    <!-- Avatar -->
+    <circle cx="60" cy="57" r="25" fill="#43A047"/>
+    <text x="60" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="white" font-weight="bold">W</text>
+    <!-- Contact name -->
+    <text x="96" y="50" font-family="Arial,sans-serif" font-size="17" fill="white" font-weight="bold">WhatsApp Premium</text>
+    <text x="96" y="72" font-family="Arial,sans-serif" font-size="12" fill="rgba(255,255,255,0.75)">Online agora</text>
+    <!-- Date separator -->
+    <rect x="270" y="92" width="140" height="22" rx="11" fill="rgba(0,0,0,0.1)"/>
+    <text x="340" y="107" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#555">Hoje</text>
+    <!-- Message bubbles -->
+    <rect x="18" y="112" width="357" height="80" rx="14" fill="white" filter="url(#bs)"/>
+    <polygon points="18,126 4,136 18,144" fill="white"/>
+    <text x="32" y="143" font-family="Arial,sans-serif" font-size="19" fill="#111">A partir de amanha o WhatsApp sera</text>
+    <text x="32" y="171" font-family="Arial,sans-serif" font-size="19" fill="#111">PAGO.</text>
+    <text x="369" y="187" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#999">14:30</text>
+    <rect x="18" y="204" width="300" height="80" rx="14" fill="white" filter="url(#bs)"/>
+    <polygon points="18,218 4,228 18,236" fill="white"/>
+    <text x="32" y="235" font-family="Arial,sans-serif" font-size="19" fill="#111">Pague apenas R$0,99/mes para</text>
+    <text x="32" y="263" font-family="Arial,sans-serif" font-size="19" fill="#111">continuar.</text>
+    <text x="312" y="279" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#999">14:30</text>
+    <rect x="18" y="296" width="366.5" height="52" rx="14" fill="white" filter="url(#bs)"/>
+    <polygon points="18,310 4,320 18,328" fill="white"/>
+    <text x="32" y="327" font-family="Arial,sans-serif" font-size="19" fill="#111">Acesse: whatsapp-premium.com/ativar</text>
+    <text x="378.5" y="343" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#999">14:31</text>
+    <rect x="18" y="360" width="357" height="80" rx="14" fill="white" filter="url(#bs)"/>
+    <polygon points="18,374 4,384 18,392" fill="white"/>
+    <text x="32" y="391" font-family="Arial,sans-serif" font-size="19" fill="#111">Sem pagamento: conta desativada em</text>
+    <text x="32" y="419" font-family="Arial,sans-serif" font-size="19" fill="#111">24h.</text>
+    <text x="369" y="435" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#999">14:31</text>
+  </g>
 </svg>
